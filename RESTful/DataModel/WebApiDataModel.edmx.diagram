@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cae9055c2a434befb147febd076b0510" Name="Diagram1">
+        <EntityTypeShape EntityType="OnLineStoreModel.AllSequence" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.ChangeLog" Width="1.5" PointX="10.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.ChangeLogExclusion" Width="1.5" PointX="8.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Country" Width="1.5" PointX="3.75" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.CountryCurrency" Width="1.5" PointX="6" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Currency" Width="1.5" PointX="3.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.EventLog" Width="1.5" PointX="10.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.sysdiagram" Width="1.5" PointX="12.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Employee" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.EmployeeAddress" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.EmployeeEmail" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Customer" Width="1.5" PointX="3.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.CustomerAddress" Width="1.5" PointX="6" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.CustomerEmail" Width="1.5" PointX="6" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.OrderDetail" Width="1.5" PointX="8.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.OrderHeader" Width="1.5" PointX="6" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.OrderStatu" Width="1.5" PointX="3.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.PaymentMethod" Width="1.5" PointX="3.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Shipper" Width="1.5" PointX="3.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Location" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.Product" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.ProductCategory" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnLineStoreModel.ProductInventory" Width="1.5" PointX="10.5" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="OnLineStoreModel.FK_CountryCurrency_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_CountryCurrency_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_HumanResources_EmployeeAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_HumanResources_EmployeeEmail" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_CustomerAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_CustomerEmail" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderDetail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Warehouse_ProductInventory_Sales_OrderDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Sales_OrderHeader_Shipper" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Warehouse_ProductInventory_Warehouse_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Warehouse_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OnLineStoreModel.FK_Warehouse_ProductInventory_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
